@@ -21,13 +21,40 @@ import java.sql.Timestamp;
 public class UserPo {
     @TableId
     private Long id;
+    /**
+     * 真实姓名
+     */
     private String name;
+    /**
+     * 昵称
+     */
     private String nickname;
+    /**
+     * 手机号（登陆账号）
+     */
     private String phone;
+    /**
+     * 密码
+     */
     private String password;
+    /**
+     * 性别枚举类
+     */
     private Gender gender;
+    /**
+     * 头像url
+     */
     private String avatar;
+    /**
+     * 创建时间
+     */
     private Timestamp createTime;
+    /**
+     * 更新时间
+     */
     private Timestamp updateTime;
+    /**
+     * 删除时间
+     */
     private Timestamp deleteTime;
 }
