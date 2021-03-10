@@ -1,62 +1,50 @@
 package com.fc.common.po;
 
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.fc.common.po.status.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author 李国鹏
  * @version 1.0.0
- * @date 2021/3/2 13:41
+ * @date 2021/3/10 16:06
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("user")
-public class UserPo {
-
-    @TableId
+@TableName("store")
+public class Store {
     private Long id;
 
     /**
-     * 真实姓名
+     * 店主
      */
-    private String name;
+    private Long userId;
 
     /**
-     * 昵称
+     * 其他管理员
      */
-    private String nickname;
+    private List<Map<String,Long>> userIds;
 
     /**
-     * 手机号（登陆账号）
+     * 商品及库存
      */
-    private String phone;
+    private List<Map<Long,Integer>> storeIds;
 
     /**
-     * 邮箱
+     * 评分
      */
-    private String email;
+    private Double star;
 
     /**
-     * 密码
+     * 店铺介绍
      */
-    private String password;
-
-    /**
-     * 性别枚举类
-     */
-    private Gender gender;
-
-    /**
-     * 头像url
-     */
-    private String avatar;
+    private String introduction;
 
     /**
      * 创建时间

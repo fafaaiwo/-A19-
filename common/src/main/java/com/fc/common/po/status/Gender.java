@@ -1,4 +1,4 @@
-package com.fc.common.po;
+package com.fc.common.po.status;
 
 /**
  * @author 李国鹏
