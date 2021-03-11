@@ -1,0 +1,13 @@
+
+.choose-property {
+	border-radius: 10rpx;
+	box-shadow: 2px 2px 10px #eeeeee;
+}
+.uparse .p {
+	padding: 0 !important;
+}
+.uparse view,
+.uparse uni-view {
+	line-height: 0 !important;
+}
+
