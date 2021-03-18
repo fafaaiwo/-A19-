@@ -1,5 +1,6 @@
 package com.fc.common.po;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fc.common.po.status.OrderStatus;
 import lombok.AllArgsConstructor;
@@ -17,13 +18,16 @@ import java.util.Map;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("order")
+@TableName("order_list")
 public class Order {
 
+    @TableId
     private Long id;
+
     /**
      * 用户
      */
+
     private Long userId;
 
     /**

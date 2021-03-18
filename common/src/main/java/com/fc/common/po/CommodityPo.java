@@ -1,12 +1,12 @@
 package com.fc.common.po;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
+import java.util.Date;
+
 
 /**
  * @author 施武轩
@@ -18,12 +18,25 @@ import java.util.List;
 @NoArgsConstructor
 @TableName("B_commodity")
 public class CommodityPo {
-    @TableId
+
+    @TableId(type = IdType.AUTO)
     private Long id;
+
     private String commodityId;
+
     private String storeId;
+
     private String commodityName;
+
     private String description;
+
     private Double price;
-    private List<String> modelList;
+
+    private String modelList;
+
+    @TableField(fill = FieldFill.INSERT)
+    private Date gmtCreate;
+
+    @TableField(fill = FieldFill.UPDATE)
+    private Date gmtUpdate;
 }

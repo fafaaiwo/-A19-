@@ -25,6 +25,8 @@
         <mybatis-plus-boot-starter.version>3.0.6</mybatis-plus-boot-starter.version>
         <mybatis-spring-boot-starter.version>2.1.2</mybatis-spring-boot-starter.version>
         <fastjson.version>1.2.68</fastjson.version>
+        <mapstruct.version>1.2.0.Final</mapstruct.version>
+        <swagger-version>2.9.2</swagger-version>
     </properties>
     <modules>
         <module>identity</module>
@@ -38,6 +40,16 @@
     </modules>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger-version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
@@ -67,6 +79,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
