@@ -1,0 +1,16 @@
+
+.goods-item{
+	margin: 5rpx;
+	border: #eeeeee solid 2rpx;
+	width: 361rpx; 
+	border-radius: 15rpx; 
+	overflow: hidden;
+}
+.goods-name{
+	font-size: 30rpx;
+	color: #3e4b53;
+	height: 3.2em;
+	overflow: hidden;
+	line-height: 1.6em;
+}
+

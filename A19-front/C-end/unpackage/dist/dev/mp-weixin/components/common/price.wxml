@@ -1,0 +1,1 @@
+<view class="row"><view class="{{['d-flex main-text-color line-h',priceSize]}}"><text class="{{['a-self-start',unitSize]}}">￥</text><slot></slot><view style="width:10rpx;"></view><text class="{{['pr-1 a-self-end',unitSize]}}">{{"/"+unit}}</text></view><block wx:if="{{showDeposit}}"><view class="ml-2 tag-blue">{{"押金"+deposit+"元"}}</view></block></view>
